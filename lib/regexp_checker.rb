@@ -10,8 +10,8 @@ rescue RegexpError => e
 end
 
 matches = text.scan(regexp)
-if matches.size > 0
+if !matches.empty?
   puts "Matched: #{matches.join(',')}"
 else
-  puts "Nothing matched."
+  puts 'Nothing matched.'
 end
